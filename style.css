@@ -1,0 +1,542 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.full-width {
+    max-width: 100%;
+}
+
+.fixed-width {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+/* Header Section */
+.bg-header-banner {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD2v5qmIb4ecQws74rjURKcibpLhpXlXi6cQ&usqp=CAU);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    padding: 20px 0;
+}
+
+.header-logo {
+    float: left;
+    width: 15%;
+}
+
+.header-logo h2 {
+    color: navy;
+    font-weight: 100;
+    font-size: 27px;
+}
+
+nav {
+    float: left;
+    width: 60%;
+    text-align: right;
+}
+
+nav ul {
+    padding-right: 60px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    line-height: 35px;
+    padding: 0px 15px;
+    color: #000;
+    font-size: 20px;
+}
+
+.header-link {
+    float: right;
+    width: 25%;
+}
+
+.header-link p {
+    line-height: 35px;
+    color: #000;
+    font-size: 18px;
+}
+
+.header-link p a {
+    color: cyan;
+    font-weight: bold;
+}
+
+/* Banner Section */
+.banner-section {
+    padding: 130px 0;
+    text-align: center;
+}
+
+.banner-section b {
+    letter-spacing: 8px;
+    word-spacing: 5px;
+}
+
+.banner-section h1 {
+    padding: 0 402px;
+    margin-bottom: 60px;
+}
+
+.banner-section form {}
+
+.banner-section form .eminput {
+    width: 22%;
+    height: 62px;
+    outline: none;
+    border: none;
+    padding: 0 25px;
+    border-radius: 40px;
+    margin-left: 80px;
+}
+
+.banner-section form .sub-btn {
+    width: 13%;
+    height: 62px;
+    background-color: #28ca8e;
+    border: none;
+    border-radius: 40px;
+    position: relative;
+    top: 0;
+    left: -78px;
+    cursor: pointer;
+}
+
+/* About Section */
+section {
+    padding: 50px 0;
+}
+
+.about-left {
+    float: left;
+    width: 50%;
+}
+
+.about-title {
+    margin-bottom: 30px;
+}
+
+.about-title h1 {
+    margin: 0 0 0 20px;
+    font-size: 50px;
+}
+
+.about-menu {}
+
+.about-menu ul {}
+
+.about-menu ul li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.about-menu ul li a {
+    color: #787878;
+    font-size: 25px;
+    padding: 5px 0;
+    position: relative;
+}
+
+.about-menu ul li:hover>a {
+    color: #000;
+}
+
+.about-menu ul li a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    border-bottom: 2px solid #1abf85;
+    transition: .5s;
+}
+
+.about-menu ul li a:hover::before {
+    width: 100%;
+}
+
+.about-right {
+    float: right;
+    width: 50%;
+    text-align: center;
+    margin-top: 100px;
+}
+
+/* Dropdown manu */
+.about-menu ul li {
+    position: relative;
+}
+
+.about-menu ul li ul {
+    position: absolute;
+    top: 120%;
+    left: 50px;
+    width: 530px;
+    opacity: 0;
+    visibility: hidden;
+    border: 1px solid transparent;
+    text-align: center;
+    transition: .5s;
+}
+
+.about-menu ul li .mobile {
+    position: absolute;
+    top: 120%;
+    left: -110px;
+    width: 530px;
+    opacity: 0;
+    visibility: hidden;
+    border: 1px solid transparent;
+    text-align: center;
+    transition: .5s;
+}
+
+.about-menu ul li .support {
+    position: absolute;
+    top: 120%;
+    left: -227px;
+    width: 530px;
+    opacity: 0;
+    visibility: hidden;
+    border: 1px solid transparent;
+    text-align: center;
+    transition: .5s;
+}
+
+.about-menu ul li:hover ul {
+    opacity: 1;
+    visibility: visible;
+    border: 1px solid #ddd;
+}
+
+.about-menu ul li ul li {
+    border-bottom: 1px solid #ddd;
+    padding: 7px 0;
+}
+
+.about-menu ul li ul li h1 {
+    font-size: 28px;
+}
+
+.about-menu ul li ul li p {
+    color: #767676;
+}
+
+.about-right img {
+    width: 430px;
+    height: auto;
+    transition: .5s;
+}
+
+.about-right img:hover {
+    transform: scale(1.5);
+
+}
+
+/* Team Section */
+.bg-team {
+    background-color: #f9f9f9;
+}
+
+.team-title {
+    text-align: center;
+}
+
+.team-title h1 {
+    font-size: 45px;
+}
+
+.team-member {
+    margin-top: 60px;
+} 
+
+.team-box {
+    float: left;
+    width: 30%;
+    background-color: #fff;
+}
+
+.member-img {}
+
+.member-img img {
+    width: 100%;
+}
+
+.member-content {
+    text-align: left;
+    padding: 40px 30px;
+}
+
+.member-content h2 {
+    margin-bottom: 9px;
+    color: #757575;
+}
+
+.member-content h6 {
+    margin-bottom: 20px;
+}
+
+.member-content p {
+    color: #767676;
+}
+
+.bio-1 {
+    position: relative;
+}
+
+.bio-1::before {
+    content: "";
+    position: absolute;
+    top: -18px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 20px 20px 20px;
+    border-color: transparent transparent #ffffff transparent;
+}
+
+.bio-2 {
+    position: relative;
+}
+
+.bio-2::before {
+    content: "";
+    position: absolute;
+    bottom: -18px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 20px 0 20px;
+    border-color: #ffffff transparent transparent transparent;
+
+}
+
+.box1 {
+    margin-left: 70px;
+}
+
+/* Pricing table section */
+.bg-pricing {
+    background-color: #ddd;
+}
+
+.pricing-title {
+    text-align: center;
+}
+
+.pricing-title h1 {
+    font-weight: 100;
+    font-size: 45px;
+}
+
+.pricing-table {}
+
+.pricing-box {
+    float: left;
+    width: 30%;
+    background-color: #fff;
+    margin-left: 5px;
+    padding: 0 35px;
+}
+
+.p-box1 {
+    margin-left: 60px;
+}
+
+.pricing-box-top {}
+
+.pricing-box-top h1 {
+    font-weight: 100;
+    border-bottom: 1px solid #ddd;
+    margin: 0;
+    padding: 40px 0 10px 0;
+}
+
+.pricing-box-center {
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.pricing-box-center ul {}
+
+.pricing-box-center ul li {
+    font-size: 20px;
+    line-height: 40px;
+    color: #767676;
+}
+
+.pricing-box-bottom {
+    padding: 26px 0;
+}
+
+.pricing-box-bottom p {
+    display: inline-block;
+}
+
+.pricing-box-bottom p span {
+    font-size: 25px;
+}
+
+.pricing-box-bottom a {
+    display: inline-block;
+    background-color: #29ca91;
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 25px;
+    margin-left: 88px;
+}
+
+.pricing-box-bottom .btn1 {
+    position: relative;
+    z-index: 1;
+}
+
+.pricing-box-bottom .btn1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    width: 0;
+    height: 100%;
+    border-radius: 25px;
+    z-index: -1;
+    transition: .5s;
+}
+
+.pricing-box-bottom .btn1:hover::before {
+    width: 100%;
+}
+
+.pricing-box-bottom .btn2 {
+    position: relative;
+    z-index: 1;
+}
+
+.pricing-box-bottom .btn2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    width: 100%;
+    height: 0;
+    border-radius: 25px;
+    z-index: -1;
+    transition: .5s;
+}
+
+.pricing-box-bottom .btn2:hover::before {
+    height: 100%;
+}
+
+.pricing-box-bottom .btn3 {
+    position: relative;
+    z-index: 1;
+}
+
+.pricing-box-bottom .btn3::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #000;
+    width: 0;
+    height: 100%;
+    border-radius: 25px;
+    z-index: -1;
+    transition: .5s;
+}
+
+.pricing-box-bottom .btn3:hover::before {
+    width: 100%;
+}
+
+/* Contact Section */
+.bg-contact {}
+
+.contact-title {
+    text-align: center;
+    margin-bottom: 81px;
+}
+
+.contact-title h1 {
+    font-size: 50px;
+}
+
+.contact-form {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.contact-form form {}
+
+.contact-form form input {}
+
+.contact-form form .ip-text {
+    width: 32%;
+    margin-left: 5px;
+    height: 50px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+
+.contact-form form .ip-btn {
+    width: 28%;
+    margin-left: 20px;
+    height: 50px;
+    outline: none;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form form textarea {
+    width: 96%;
+    padding: 25px 0px;
+    height: 150px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    resize: none;
+}
+
+/* Footer Section */ 
+.bg-footer{background-color: silver;}
+footer{padding: 20px 0;}
+footer p{display: inline-block;margin-left: 100px;font-size: 20px;}
+footer p a{color: blue;}
+footer .footer-icon{margin-left: 405px;}
+footer .footer-icon a{padding: 0 20px;color: #fff;}
